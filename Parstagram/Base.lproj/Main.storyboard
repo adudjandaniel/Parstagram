@@ -54,6 +54,9 @@
                                             <constraint firstAttribute="width" constant="47" id="uwN-cH-Dct"/>
                                         </constraints>
                                         <state key="normal" title="Sign In"/>
+                                        <connections>
+                                            <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fKK-OL-0oj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Euf-OZ-suk">
                                         <rect key="frame" x="247" y="368" width="54" height="30"/>
@@ -61,6 +64,9 @@
                                             <constraint firstAttribute="width" constant="54" id="u61-Wx-nqv"/>
                                         </constraints>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xfb-Ia-GBg"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NWs-XT-EyT">
                                         <rect key="frame" x="37" y="283" width="260" height="34"/>
@@ -104,10 +110,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="UsernameField" destination="PKu-jt-Eml" id="IwJ-KA-bLT"/>
+                        <outlet property="passwordField" destination="NWs-XT-EyT" id="urh-xN-aeK"/>
+                        <outlet property="usernameField" destination="PKu-jt-Eml" id="YoZ-Gv-kD1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+            <point key="canvasLocation" x="277" y="129"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="bnT-xA-d6Q">
